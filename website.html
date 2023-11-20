@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Making new Website today </title>
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            background-image: url(background.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            
+
+        }
+
+
+        .navbar {
+            width: 100%;
+            height: 15vh;
+            
+            display: flex;
+            align-items: center;
+
+
+        }
+
+        .logo {
+            width: 160px;
+            cursor: pointer;
+        }
+
+        .cart {
+            width: 40px;
+            cursor: pointer;
+        }
+
+        nav {
+            flex: 1;
+            padding-left: 60px;
+        }
+
+        i{
+            display: none;
+        }
+
+        nav ul li {
+            list-style: none;
+            display: inline-block;
+            margin: 0px 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-size: 1.9vw;
+        }
+
+        nav ul li a:hover {
+            color: #ff77cd;
+            transition: 0.6s ease-in;
+        }
+
+
+        span {
+            color: #ff77cd;
+        }
+
+
+        .feature-img {
+
+            max-width: 600px;
+            max-height: 500px;
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+
+        .icons {
+            margin-top: 40px;
+            display: flex;
+            margin-left: 236px;
+        }
+
+        .icons img {
+            width: 40px;
+            margin-right: 15px;
+        }
+
+        .content .btn {
+            display: inline-block;
+            background: linear-gradient(45deg, #87adfe, #ff77cd);
+            border-radius: 6px;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            box-shadow: 3px 8px 22px rgba(94, 28, 68, 0.15);
+            margin-left: 50px;
+            margin-top: 90px;
+        }
+
+
+        .super {
+            height: calc(100vh - 15vh);
+
+            display: flex;
+        }
+
+
+        .content {
+            width: 50%;
+
+            height: calc(100vh - 15vh);
+        }
+
+        .picture {
+            width: 50%;
+            max-width: 50%;
+            height: calc(100vh - 15vh);
+            overflow: hidden;
+
+
+        }
+
+
+
+        h1 {
+            font-size: 5vw;
+            margin-top: 18px;
+            margin-left: 28px;
+            color: #232d60;
+        }
+
+
+        p {
+            font-size: 1.5vw;
+            margin-left: 28px;
+            margin-top: 32px;
+            line-height: 1.9vw;
+            color: #232d60;
+        }
+
+
+        @media (max-width:700px) {
+
+            .navbar{
+                width: 100%;
+            }
+            .super{
+               display: block;
+              
+             
+            }
+
+            .picture{
+             order: 1;
+             width: 100%;
+             margin-left: 150px;
+            
+            }
+            .content{
+             order: 22;
+
+            }
+        }
+
+
+
+        @media (max-width:600px) {
+            nav ul li a{
+                display: none;
+            }
+
+            i{
+                display: block;
+            }
+        }
+
+
+
+
+        @media (max-width:450px) {
+           
+            .content{
+                margin-left: 80px;
+            }
+        }
+
+
+        @media (max-width:408px){
+            .content{                                                          
+                margin-left: 60px;
+            }
+        }
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="navbar">
+            <img src="logo.png" class="logo" alt="logo">
+            <nav>
+                <ul>
+                    <li> <a href="#">Home</a></li>
+                    <li> <a href="#">About</a></li>
+                    <li> <a href="#">Blogs</a></li>
+                    <li> <a href="#">Collections</a></li>
+
+                </ul>
+
+            </nav>
+            <i class="ri-menu-line"></i>
+            <img src="cart.png" class="cart">
+        </div>
+
+        <div class="super">
+            <div class="content">
+                <a href="#" class="btn">2020 Collections</a>
+                <h1>YOu Should <span>ALways</span> <br> think Positive</h1>
+                <p>A man is NOthing but the product of his THoughts <br>whatever he thinks ,he becomes</p>
+
+
+
+
+
+
+                <div class="icons">
+                    <img src="back-arrow.png" alt="">
+                    <img src="next-arrow.png" alt="">
+                </div>
+
+            </div> 
+
+             <div class="picture">
+                <img src="img.png" alt="" class="feature-img">
+            </div>
+
+        </div>
+
+
+
+    </div>
+</body>
+
+</html>
